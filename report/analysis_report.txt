@@ -1,0 +1,25 @@
+PROJECT: Advanced Time Series Forecasting using Prophet
+
+1. Problem Statement:
+This project builds a forecasting model to predict future time series values using Facebook Prophet with hyperparameter tuning.
+
+2. Methodology:
+- Synthetic seasonal data was generated.
+- Data was split into training and testing sets.
+- Prophet was trained using multiple combinations of:
+  • changepoint_prior_scale
+  • seasonality_prior_scale
+- Grid search was used to find optimal parameters based on RMSE.
+
+3. Best Hyperparameters:
+changepoint_prior_scale = 0.1
+seasonality_prior_scale = 1.0
+
+4. Evaluation Metrics:
+The final model achieved the lowest RMSE on the test set compared to other configurations.
+
+5. Insights:
+The tuned model captures seasonality patterns effectively and provides smooth future forecasts.
+
+6. Conclusion:
+Hyperparameter optimization improved forecast accuracy significantly compared to default Prophet settings.
